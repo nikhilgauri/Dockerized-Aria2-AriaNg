@@ -1,0 +1,20 @@
+version: '2'
+services:
+  aria2c:
+    image: nikhil/aria2
+    container_name: aria2
+    build:
+      context: ./
+      dockerfile: aria2.Dockerfile
+    ports:
+      - "6800:6800"
+    volumes:
+      - <DOWNLOAD_LOCATION>:/downloads
+  ariang:
+    image: nikhil/ariang
+    container_name: ariang
+    build:
+      context: ./
+      dockerfile: AriaNg.Dockerfile
+    ports:
+      - "6880:80"
