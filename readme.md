@@ -1,5 +1,3 @@
-Readme.md
-
 ## Dockerized Aria2c with AriaNg
 * * *
 This repository contains docker build files for [aria2](https://aria2.github.io/) running as RPC server as well as a frontend GUI using [AriaNg](https://github.com/mayswind/AriaNg).
